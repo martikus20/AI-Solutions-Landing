@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,9 +14,10 @@
     <p class="text-xl max-w-3xl mx-auto">
       Soluciones inteligentes con IA diseñadas desde la fábrica, para fábricas.
     </p>
-    <a href="#contacto" class="mt-8 inline-block bg-white text-blue-600 font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition">
+    <button onclick="document.getElementById('demoModal').style.display='block'"
+      class="mt-8 inline-block bg-white text-blue-600 font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition">
       Solicita una demo
-    </a>
+    </button>
   </header>
 
   <!-- Servicios -->
@@ -92,10 +92,10 @@
     </a>
   </section>
 
-  <!-- Footer -->
-  <footer class="py-6 text-center text-sm text-gray-500 bg-gray-950">
-    © 2025 AI Solutions · contacto@aisolutions.com
-  </footer>
-
-</body>
-</html>
+  <!-- Modal con Google Form -->
+  <div id="demoModal"
+       style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:9999;">
+    <div style="background:white; margin:5% auto; padding:20px; width:90%; max-width:800px; border-radius:8px; position:relative;">
+      <!-- Cerrar -->
+      <span onclick="document.getElementById('demoModal').style.display='none'"
+... (18 líneas restantes)
